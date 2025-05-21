@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="css/style.css?v=1.0">
 
     </head>
-
+ 
     <body>
 <section class="header">
     <a href="home.php" class="logo">Events</a>
