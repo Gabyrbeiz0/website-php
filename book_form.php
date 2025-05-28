@@ -1,6 +1,6 @@
 <?php
 
-$connection = mysqli_connect('localhost', 'root', '', 'book_db');
+$connection = mysqli_connect('13.61.208.181', 'root', 'root', 'book_db');
 
 if (isset($_POST['send'])) {
     $name = $_POST['name'];
