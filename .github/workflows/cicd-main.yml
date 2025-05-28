@@ -45,7 +45,7 @@ jobs:
           ./remover.sh
 
           # Pull the latest image from DockerHub
-          docker pull ${{ env.DOCKER_IMAGE }}:${{ github.run_number }}
+          docker pull ${{ secrets.DOCKER_IMAGE }}:${{ github.run_number }}
 
           # Run the Docker container
           docker run -d --name airbnb-backend-container -p 8000:8000 ${{ secrets.DOCKER_IMAGE }}:${{ github.run_number }}
